@@ -16,3 +16,30 @@ html{
     position: relative;
     margin: 2rem;
 }
+.holiday{
+    height: 20rem;
+    position: absolute;
+    transform: all .3s;
+}
+.diwali{
+    top: 15rem;
+    left: 15%;
+}
+.saturnalia{
+    top: 5rem;
+    right: 0;
+}
+.china{
+    top: -5rem;
+    left: 1;
+}
+
+.holiday:hover{
+    transform: scale(1.3);
+    outline: 1rem solid purple;
+    z-index: 2;
+}
+.holiday-galley:hover .holiday-galley:not(:hover){
+    transform: scale(.8);
+    opacity: .5;
+}
