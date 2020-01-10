@@ -1,0 +1,104 @@
+@import"./_about.scss";
+@import"./_header.scss";
+@import"./.variable";
+
+html{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: color(main);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 4rem;
+    margin-top: 3rem;
+}
+.home{
+    background-color: color(first);
+}
+.home:hover{
+    background-color: color(blue2);
+}
+.shows{
+    background-color: color(second);
+}
+.shows:hover{
+    background-color: color(pink2);
+}
+.aboutus{
+    background-color: color(first);
+}
+.aboutus:hover{
+    background-color: color(blue2);
+}
+.contactus{
+    background-color: color(second);
+}
+.contactus:hover{
+    background-color: color(pink2);
+}
+.images{
+    margin: 0 auto;
+}
+.logo{
+    display: block;
+    position: relative;
+    animation-name: logo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    animation-delay: .1s;
+}
+.gun{
+    margin: 5rem;
+    transform: rotate(15deg);
+}
+@keyframes logo{
+    0%{left: 0%; top: 0rem;}
+    25% {left: 30%; top: 0rem;}
+    50%{left: -30%; top: 0rem;}
+    75%{left: 2%; top: 0rem;}
+}
+.btn{
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    transform: rotate(35deg);
+    cursor: pointer;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+}
+#pop{
+    position: relative;
+    top: 30%;
+    right: -55%;
+    animation-name: fade;
+    animation-duration: 16s;
+}
+ h1{
+     margin-top: 5rem;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+ }
+.images{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.text{
+    
+}

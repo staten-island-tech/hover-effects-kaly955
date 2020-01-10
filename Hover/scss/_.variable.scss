@@ -1,0 +1,11 @@
+$colors:(
+    first: #00AEC7, 
+    blue2: rgba(0, 172, 199, 0.479),
+    second: #98FB86,
+    pink2: rgba(152, 251, 134, 0.664),
+    main: #6cd3a3a9
+);
+
+@function color($colors-name){
+    @return map-get($colors, $colors-name)
+}

@@ -1,0 +1,282 @@
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #6cd3a3a9;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 4rem;
+  margin-top: 3rem;
+}
+
+.home {
+  background-color: #00AEC7;
+}
+
+.home:hover {
+  background-color: rgba(0, 172, 199, 0.479);
+}
+
+.shows {
+  background-color: #98FB86;
+}
+
+.shows:hover {
+  background-color: rgba(152, 251, 134, 0.664);
+}
+
+.aboutus {
+  background-color: #00AEC7;
+}
+
+.aboutus:hover {
+  background-color: rgba(0, 172, 199, 0.479);
+}
+
+.contactus {
+  background-color: #98FB86;
+}
+
+.contactus:hover {
+  background-color: rgba(152, 251, 134, 0.664);
+}
+
+.images {
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  position: relative;
+  -webkit-animation-name: logo;
+          animation-name: logo;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+.gun {
+  margin: 5rem;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+@-webkit-keyframes logo {
+  0% {
+    left: 0%;
+    top: 0rem;
+  }
+  25% {
+    left: 30%;
+    top: 0rem;
+  }
+  50% {
+    left: -30%;
+    top: 0rem;
+  }
+  75% {
+    left: 2%;
+    top: 0rem;
+  }
+}
+
+@keyframes logo {
+  0% {
+    left: 0%;
+    top: 0rem;
+  }
+  25% {
+    left: 30%;
+    top: 0rem;
+  }
+  50% {
+    left: -30%;
+    top: 0rem;
+  }
+  75% {
+    left: 2%;
+    top: 0rem;
+  }
+}
+
+.btn {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  cursor: pointer;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+}
+
+#pop {
+  position: relative;
+  top: 30%;
+  right: -55%;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+}
+
+h1 {
+  margin-top: 5rem;
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'Viga', sans-serif;
+}
+
+.images {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container{
+  margin-top: 10rem;
+  display: flex;
+  height: 100rem;
+  background-color: cornflowerblue;
+  justify-content: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.child-container{
+  display: flex;
+  width: 40rem;
+  background-color: white;
+  font-size: 2rem;
+}
+.child-two{
+  display: flex;
+  width: 80rem;
+  background-color: tomato;
+  flex-direction: column;
+}
+#child{
+  display: flex;
+  background-color: violet;
+  width: 10rem;
+  align-self: center;
+}
+#child-double{
+  margin-top: 10rem ;
+  display: flex;
+  background-color: yellow;
+  height: 50rem;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+}
+#one{
+display: flex;
+background-color: violet;
+height: 10rem;
+width: 20rem;
+}
+#two{
+  display: flex;
+  background-color: green;
+  height: 10rem;
+  width: 20rem;
+}#three{
+    display: flex;
+    background-color: blue;
+    height: 10rem;
+    width: 20rem;
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  top: 120%;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 10rem;
+}
+
+ul li a {
+  position: relative; 
+  display: block;
+  width: 10rem;
+  text-align: center;
+  line-height: 63px;
+  background: rgb(44, 179, 156);
+  border-radius: 50%;
+  font-size: 30px;
+  transition: .5s;
+ 
+}
+
+ul li a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #020101;
+}
+
+ul li a:hover {
+  color: #020101;
+  box-shadow: 0 0 5px #020101;
+  text-shadow: 0 0 5px #020101;
+}
+.morty:hover{
+  opacity: .5;
+  transition: .5s ease;
+  background-color: cadetblue;
+}
+.rick:hover{
+  opacity: .5;
+  transition: .5s ease;
+}
+.pickle:hover{
+}
